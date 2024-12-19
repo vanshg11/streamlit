@@ -1,0 +1,662 @@
+/* App.css */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f6f9; /* Updated to a lighter background */
+  color: #333;
+  margin: 0;
+  padding: 0;
+}
+
+/* Header Styles */
+.header {
+  background-color: #007bff;
+  color: white;
+  padding: 20px;
+  text-align: center;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.header h1 {
+  margin: 0;
+  font-size: 2.5rem;
+  transition: color 0.3s;
+}
+
+.header h1:hover {
+  color: #e0e0e0;
+}
+
+/* Main Styles */
+.dashboard {
+  max-width: 1200px; /* Increased max-width */
+  margin: 20px auto;
+  padding: 20px;
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.3s;
+}
+
+.dashboard:hover {
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+h1 {
+  text-align: center;
+  color: #007bff;
+  margin-bottom: 20px;
+}
+
+/* Search Container */
+.search-container {
+  display: flex;
+  margin-bottom: 20px;
+}
+
+.search-input {
+  flex: 1;
+  padding: 10px;
+  border: 1px solid #007bff;
+  border-radius: 4px;
+  font-size: 1rem;
+  transition: border-color 0.3s;
+}
+
+.search-input:focus {
+  border-color: #0056b3;
+  outline: none;
+}
+
+.search-button {
+  padding: 10px 20px;
+  background-color: #007bff;
+  border: none;
+  border-radius: 4px;
+  color: white;
+  font-size: 1rem;
+  cursor: pointer;
+  margin-left: 10px;
+  transition: background-color 0.3s, transform 0.3s;
+}
+
+.search-button:hover {
+  background-color: #0056b3;
+  transform: scale(1.05);
+}
+
+/* Loading */
+.loading {
+  font-size: 1.2rem;
+  color: #007bff;
+  text-align: center;
+}
+
+/* Medicine List */
+.medicine-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.medicine-item {
+  padding: 10px;
+  border-bottom: 1px solid #ddd;
+  transition: background-color 0.3s, transform 0.3s;
+}
+
+.medicine-item:hover {
+  background-color: #f0f8ff;
+  transform: scale(1.02);
+}
+
+.no-results {
+  font-size: 1.2rem;
+  color: #888;
+  text-align: center;
+}
+
+/* Upload Section */
+.upload-section {
+  margin-top: 30px;
+  padding: 20px;
+  border: 1px solid #007bff;
+  border-radius: 8px;
+  background-color: #f8f9fc;
+}
+
+.upload-input {
+  border: 1px solid #007bff;
+  border-radius: 4px;
+  padding: 10px;
+  width: 100%;
+  transition: border-color 0.3s;
+}
+
+.upload-input:focus {
+  border-color: #0056b3;
+  outline: none;
+}
+
+/* Prescription List */
+.prescription-list {
+  margin-top: 20px;
+}
+
+.prescription-list h3 {
+  font-size: 1.5rem;
+  color: #007bff;
+  margin-bottom: 10px;
+}
+
+.prescription-link {
+  color: #007bff;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.prescription-link:hover {
+  color: #0056b3;
+  text-decoration: underline;
+}
+
+/* Reminder Section */
+.reminder-section {
+  margin-top: 30px;
+  padding: 20px;
+  border: 1px solid #007bff;
+  border-radius: 8px;
+  background-color: #f8f9fc;
+}
+
+.reminder-input {
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  width: calc(100% - 22px);
+  transition: border-color 0.3s;
+}
+
+.reminder-input:focus {
+  border-color: #007bff;
+  outline: none;
+}
+
+.reminder-button {
+  padding: 10px 20px;
+  background-color: #007bff;
+  border: none;
+  border-radius: 4px;
+  color: white;
+  cursor: pointer;
+  margin-top: 10px;
+  transition: background-color 0.3s, transform 0.3s;
+}
+
+.reminder-button:hover {
+  background-color: #0056b3;
+  transform: scale(1.05);
+}
+
+.reminder-list {
+  margin-top: 20px;
+}
+
+.reminder-list h3 {
+  font-size: 1.5rem;
+  color: #007bff;
+  margin-bottom: 10px;
+}
+
+/* Calendar Section */
+.calendar-section {
+  background: #fff;
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+  transition: all 0.3s ease;
+  align-items: center;
+
+  /* position: relative;
+  left: 500px;
+  top: 50px; */
+}
+
+.calendar-section h2 {
+  color: #0056b3;
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+.calendar {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  overflow: hidden;
+  transition: border-color 0.3s ease;
+}
+
+.calendar:hover {
+  border-color: #0056b3;
+}
+
+/* Dosage Calculator */
+.dosage-calculator {
+  background: #fff;
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+  margin-top: -320px; /* Move it slightly above */
+  margin-left: 750px;
+
+  transition: all 0.3s ease;
+  width: 350px; /* Smaller width */
+  /* float: right; Align to the right side */
+}
+
+.dosage-calculator h2 {
+  color: #0056b3;
+  font-size: 1.2rem; /* Smaller font size */
+  margin-bottom: 10px;
+}
+
+.dosage-input {
+  width: 100%;
+  padding: 8px; /* Adjust padding for smaller input */
+  margin-top: 5px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  transition: border-color 0.3s ease;
+}
+
+.dosage-input:focus {
+  border-color: #0056b3;
+  outline: none;
+}
+
+.dosage-button {
+  background-color: #0056b3;
+  color: #fff;
+  border: none;
+  padding: 8px 12px; /* Smaller button size */
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.dosage-button:hover {
+  background-color: #004494;
+  transform: scale(1.05);
+}
+
+.dosage-button:active {
+  background-color: #003366;
+}
+
+.dosage-result {
+  font-size: 1rem; /* Smaller result text */
+  color: #0056b3;
+}
+
+/* History Section */
+.history-section {
+  background: #fff;
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+  margin-top: 100px;
+  transition: all 0.3s ease;
+}
+
+.history-section h2 {
+  color: #0056b3;
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+.history-section ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.history-section li {
+  padding: 10px;
+  border-bottom: 1px solid #ddd;
+  transition: background-color 0.3s ease;
+}
+
+.history-section li:hover {
+  background-color: #e6f0ff;
+}
+
+.history-section p {
+  color: #666;
+}
+/* Progress Tracker */
+.progress-tracker {
+  margin-top: 20px;
+  padding: 10px;
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  background-color: #f9f9f9;
+}
+
+.progress-tracker h2 {
+  font-size: 1.2em;
+  margin-bottom: 8px;
+}
+
+.progress-input {
+  padding: 8px;
+  width: 100%;
+  max-width: 250px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  margin-top: 5px;
+}
+
+.progress-display {
+  font-weight: bold;
+  margin-top: 8px;
+  color: #4a90e2;
+}
+
+/* Export CSV */
+.export-csv {
+  margin-top: 20px;
+  padding: 10px;
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  background-color: #f1f5f8;
+}
+
+.export-csv h2 {
+  font-size: 1.2em;
+  margin-bottom: 8px;
+}
+
+.export-button {
+  padding: 10px 15px;
+  background-color: #4a90e2;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 0.9em;
+}
+
+.export-button:hover {
+  background-color: #3c7dba;
+}
+/* Symptom Checker */
+.symptom-checker {
+  margin: 20px 0;
+  padding: 15px;
+  background-color: #f0faff;
+  border: 1px solid #b2e0ff;
+  border-radius: 8px;
+}
+
+.symptom-checker h2 {
+  color: #0044cc;
+  margin-bottom: 10px;
+}
+
+.symptom-input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #b2e0ff;
+  border-radius: 5px;
+}
+
+.symptom-check-button {
+  background-color: #0080ff;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.symptom-check-button:hover {
+  background-color: #0066cc;
+}
+
+.condition-list ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.condition-item {
+  background-color: #e6f7ff;
+  padding: 8px;
+  border-radius: 5px;
+  margin: 5px 0;
+}
+
+/* Mood and Wellness Tracker */
+.wellness-tracker {
+  margin: 20px 0;
+  padding: 15px;
+  background-color: #e5ffe5;
+  border: 1px solid #a2ffa2;
+  border-radius: 8px;
+}
+
+.wellness-tracker h2 {
+  color: #008000;
+  margin-bottom: 10px;
+}
+
+.mood-input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #a2ffa2;
+  border-radius: 5px;
+}
+
+.mood-log-button {
+  background-color: #00cc44;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.mood-log-button:hover {
+  background-color: #009933;
+}
+
+.mood-log ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.mood-item {
+  padding: 8px;
+  border-radius: 5px;
+  margin: 5px 0;
+}
+
+/* Dynamic mood color styling */
+.mood-happy {
+  background-color: #d9ffd9;
+  color: #006600;
+}
+
+.mood-stressed {
+  background-color: #ffebeb;
+  color: #cc0000;
+}
+
+.mood-calm {
+  background-color: #e0f7ff;
+  color: #006699;
+}
+/* Container styles */
+.symptom-checker {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+/* Heading styles */
+h2 {
+  font-size: 24px;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+/* Input styles */
+.symptom-input {
+  width: 80%;
+  padding: 10px;
+  font-size: 16px;
+  border: 2px solid #ddd;
+  border-radius: 5px;
+  margin-bottom: 20px;
+  outline: none;
+  transition: border-color 0.3s ease;
+}
+
+.symptom-input:focus {
+  border-color: #007bff;
+}
+
+/* Button styles */
+.check-symptoms-button,
+.clear-conditions-button {
+  padding: 10px 20px;
+  font-size: 16px;
+  color: #fff;
+  background-color: #007bff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin: 10px;
+  transition: background-color 0.3s ease;
+}
+
+.check-symptoms-button:hover,
+.clear-conditions-button:hover {
+  background-color: #0056b3;
+}
+
+/* Conditions list styles */
+.conditions-list {
+  margin-top: 20px;
+  text-align: left;
+}
+
+.conditions-list h3 {
+  font-size: 20px;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.conditions-list ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.conditions-list li {
+  font-size: 16px;
+  color: #555;
+  margin-bottom: 5px;
+  padding: 5px;
+  background-color: #e9ecef;
+  border-radius: 5px;
+}
+
+.conditions-list li:hover {
+  background-color: #007bff;
+  color: white;
+}
+/* Saved side effects section */
+.saved-side-effects {
+  margin-top: 20px;
+  padding: 15px;
+  background-color: #e9ecef;
+  border-radius: 5px;
+  border: 1px solid #ddd;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Heading style inside saved side effects */
+.saved-side-effects h3 {
+  font-size: 20px;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+/* Paragraph style for saved side effects content */
+.saved-side-effects p {
+  font-size: 16px;
+  color: #555;
+  line-height: 1.5;
+  word-wrap: break-word;
+  white-space: pre-wrap; /* Makes sure text preserves newlines */
+}
+/* Save Side Effects Button */
+.save-side-effects-button {
+  background-color: #4caf50; /* Green background for a positive action */
+  color: white; /* White text color */
+  font-size: 16px; /* Readable font size */
+  padding: 10px 20px; /* Adequate padding to make the button clickable */
+  border: none; /* Remove default border */
+  border-radius: 5px; /* Rounded corners */
+  cursor: pointer; /* Pointer cursor on hover */
+  transition: background-color 0.3s, transform 0.2s; /* Smooth transition effects */
+}
+
+.save-side-effects-button:hover {
+  background-color: #45a049; /* Slightly darker green on hover */
+}
+
+.save-side-effects-button:active {
+  transform: scale(0.98); /* Button slightly shrinks when clicked */
+}
+
+.save-side-effects-button:focus {
+  outline: none; /* Removes the focus outline */
+}
+.disease-prediction-container {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.disease-prediction-text {
+  font-size: 1.2rem;
+  color: #333;
+  display: inline-block;
+}
+
+.disease-prediction-button {
+  background-color: #0056b3;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1rem;
+  text-align: center;
+  transition: background-color 0.3s, transform 0.3s;
+  margin-top: 10px;
+}
+
+.disease-prediction-button:hover {
+  background-color: #004494;
+  transform: scale(1.05);
+}
+
+.disease-prediction-button:active {
+  background-color: #003366;
+}
